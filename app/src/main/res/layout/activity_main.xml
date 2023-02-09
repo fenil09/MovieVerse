@@ -7,11 +7,72 @@
         android:layout_height="match_parent"
         android:background="@color/white"
         tools:context=".MainActivity">
-    <ImageView
-            android:layout_width="252dp"
-            android:layout_height="301dp" tools:srcCompat="@tools:sample/avatars" android:id="@+id/imageView"
-            app:layout_constraintBottom_toBottomOf="parent"
+
+    <EditText
+            android:layout_width="302dp"
+            android:layout_height="70dp"
+            android:background="@drawable/roundeditext"
+            android:inputType="textPersonName"
+            android:hint="Movie Name Please"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold|italic"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:id="@+id/et1"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.395"
-            app:layout_constraintVertical_bias="0.203"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.11"/>
+    <ImageButton
+            android:layout_width="31dp"
+            android:background="@drawable/roundbutton"
+            android:layout_height="29dp" app:srcCompat="@drawable/ic_baseline_search_24"
+            android:id="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/et1" android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et1" android:layout_marginBottom="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/et1"
+            app:layout_constraintStart_toStartOf="@+id/et1"
+            app:layout_constraintHorizontal_bias="0.797"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="380dp"
+            android:layout_height="508dp"
+            android:paddingLeft="2dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/recyclerView" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.905" app:layout_constraintHorizontal_bias="0.516"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="242dp" android:layout_height="222dp"
+                                           app:layout_constraintEnd_toEndOf="parent"
+                                           app:layout_constraintStart_toStartOf="parent"
+                                           android:visibility="invisible"
+                                           android:id="@+id/lottie1"
+                                           app:lottie_rawRes="@raw/update"
+                                           app:lottie_autoPlay="true"
+                                           app:lottie_loop="true"
+                                           app:layout_constraintBottom_toBottomOf="parent"
+                                           app:layout_constraintTop_toTopOf="parent"
+                                           app:layout_constraintHorizontal_bias="0.497"
+                                           app:layout_constraintVertical_bias="0.655">
+    </com.airbnb.lottie.LottieAnimationView>
+    <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" tools:layout_editor_absoluteY="123dp" tools:layout_editor_absoluteX="194dp"/>
+    <ImageButton
+            android:layout_width="31dp"
+            android:background="@drawable/roundbutton"
+            android:layout_height="29dp" app:srcCompat="@drawable/ic_baseline_clear_24"
+            android:id="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/et1" android:layout_marginTop="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et1" android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="@+id/et1" android:layout_marginStart="252dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/et1"
+            app:layout_constraintHorizontal_bias="0.909" app:layout_constraintVertical_bias="0.0"/>
+    <ImageView
+            android:layout_width="403dp"
+            android:layout_height="430dp" app:srcCompat="@drawable/image" android:id="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.671"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

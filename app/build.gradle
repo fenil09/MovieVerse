@@ -6,11 +6,10 @@ apply plugin:'kotlin-kapt'
 
 android {
     compileSdk 33
-
     defaultConfig {
         applicationId "com.phone.movieverse"
         minSdk 32
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
