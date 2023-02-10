@@ -9,6 +9,9 @@ import retrofit2.http.Query
 interface OMDB {
     @GET("?&apikey=fd2afd8d")
     fun getmovielist(@Query("s") s:String):Call<Search>
+
+    @GET("?&apikey=fd2afd8d")
+    fun getmoviedetails(@Query("i") id:String):Call<Details>
 }
 
 object movieapi{

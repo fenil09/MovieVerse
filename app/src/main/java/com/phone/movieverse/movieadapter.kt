@@ -1,11 +1,13 @@
 package com.phone.movieverse
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -24,6 +26,13 @@ class movieadapter(val context:Context,val movielist:List<SearchX>): RecyclerVie
         val moviedata=movielist[position]
         Glide.with(context).load(moviedata.image).into(holder.imageview)
         holder.textview.text=moviedata.title
+
+        holder.imageview.setOnClickListener {
+            val movieid=movielist[position].movieid
+            val intent:Intent=Intent(context,MovieDetails::class.java)
+            intent.putExtra("movieid",movieid)
+            context.startActivity(intent)
+        }
     }
 
 }

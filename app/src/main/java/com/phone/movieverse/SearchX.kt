@@ -8,5 +8,7 @@ data class SearchX(
     @SerializedName("Year")
     val year:String,
     @SerializedName("Poster")
-    val image:String
+    val image:String,
+    @SerializedName("imdbID")
+    val movieid:String
 )
