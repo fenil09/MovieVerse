@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/lightroundeditext.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/roundbutton.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/roundeditext.xml" value="0.1345" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.18802083333333333" />
+        <entry key="app/src/main/res/drawable/roundimage.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/roundtextviews.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/layout/movie_elements.xml" value="0.33" />
       </map>

@@ -17,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
         val actionbar: ActionBar
         actionbar= supportActionBar!!
-        actionbar.setBackgroundDrawable(ColorDrawable(Color.parseColor("#000000")))
+        actionbar.setBackgroundDrawable(ColorDrawable(Color.parseColor("#7f3e98")))
         val timer=Timer()
         timer.schedule(4000){
             val intent=Intent(applicationContext,MainActivity::class.java)
